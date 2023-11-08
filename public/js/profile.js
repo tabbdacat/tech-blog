@@ -4,6 +4,10 @@ const newFormHandler = async (event) => {
     const title = document.querySelector('#blog-title').value.trim();
     const body = document.querySelector('#blog-body').value.trim();
   
+    console.log(title);
+    console.log(body);
+
+
     if (title && body) {
       const response = await fetch(`/api/blogs`, {
         method: 'POST',
@@ -38,7 +42,7 @@ const newFormHandler = async (event) => {
 //   };
   
   document
-    .querySelector('.new-project-form')
+    .querySelector('.new-blog-form')
     .addEventListener('submit', newFormHandler);
   
 //   document
