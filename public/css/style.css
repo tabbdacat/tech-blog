@@ -1,6 +1,10 @@
 .blog-link {
-    font-weight: bold;
-    /* padding: 15px 30px; */
+    color: black;
     text-decoration: none;
     text-align: center;
+}
+
+.blog-link:hover {
+    color: rgb(85, 128, 172);
+    font-weight: 125%;
 }

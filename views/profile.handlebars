@@ -16,7 +16,6 @@
       <div class="form-floating mb-3">
         <input type="text" class="form-control" id="blog-body" name="blog-body" />
         <label for="blog-body">Body:</label>
-        {{!-- <textarea class="form-input" id="blog-body" name="blog-body"></textarea> --}}
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Publish</button>
@@ -33,7 +32,7 @@
       <div class="col">
         <div class="card">
           <div class="card-body fs-5">
-            <a href="/blog/{{blog.id}}" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">{{blog.title}} </a>
+            <a href="/blog/{{blog.id}}" class="blog-link">{{blog.title}} </a>
             </div>
           <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">Delete Blog</button>
         </div>
