@@ -1,8 +1,8 @@
-<h3 class="py-3">Check Out Blogs From the Tech Community</h3>
+<h3 class="p-3">Check Out Articles From the Tech Community</h3>
 <!-- Loop over each object in the blogs array -->
 {{#each blogs as |blog| }}
-<div class="card text-center w-75 m-3">
-  <div class="card-header">
+<div class="card w-75 m-3">
+  <div class="card-header text-info bg-dark">
     <a href="/blog/{{blog.id}}" class="blog-link fs-4"> {{blog.title}} </a>
   </div>
   <div class="card-body">

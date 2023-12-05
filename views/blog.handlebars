@@ -9,7 +9,7 @@
 </div>
 
 {{!-- Comments section --}}
-
+{{#if logged_in}}
 <form class="form new-comment-form my-3">
   <input type="hidden" value="{{id}}" id="blog-id" name="blog-id" />
   <div class="form-group">
@@ -17,10 +17,10 @@
     <textarea class="form-control" style="width: 60%;" id="comment-body" name="comment-body"></textarea>
   </div>
   <div class="form-group">
-    <button type="submit" class="btn btn-primary my-3">Submit</button>
+    <button type="submit" class="btn btn-secondary my-3">Submit</button>
   </div>
 </form>
-
+{{/if}}
 <div class="comment-list row">
   <h4>Comments:</h4>
   {{#if comments.length}}

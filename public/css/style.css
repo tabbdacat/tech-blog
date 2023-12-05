@@ -1,12 +1,11 @@
 .blog-link {
-    color: black;
     text-decoration: none;
     text-align: center;
 }
 
 .blog-link:hover {
     color: rgb(85, 128, 172);
-    font-weight: 125%;
+    font-weight: bolder;
 }
 
 .hide {

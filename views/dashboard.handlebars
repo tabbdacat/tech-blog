@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<button type="button" class="btn btn-primary btn-lg add-new-blog">Add New Blog Post</button>
+<button type="button" class="btn btn-secondary btn-lg add-new-blog">Add New Blog Post</button>
 
 <div class="row mt-4">
   <div class="col-md-8 new-blog-display hide">
@@ -25,7 +25,7 @@
 
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Publish</button>
+        <button type="submit" class="btn btn-secondary">Publish</button>
       </div>
     </form>
   </div>
@@ -41,7 +41,7 @@
           <div class="card-body fs-5">
             <a href="/blog/{{blog.id}}" class="blog-link">{{blog.title}} </a>
             </div>
-          <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">Delete Blog</button>
+          <button class="btn btn-sm btn-danger delete-btn" data-id="{{blog.id}}">Delete Blog</button>
         </div>
       </div>
 
