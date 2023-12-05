@@ -8,3 +8,7 @@
     color: rgb(85, 128, 172);
     font-weight: 125%;
 }
+
+.hide {
+    display: none;
+}

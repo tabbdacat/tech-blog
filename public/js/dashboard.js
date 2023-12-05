@@ -1,3 +1,10 @@
+const displayFormHandler = async (event) => {
+  event.preventDefault();
+
+  document.querySelector('.new-blog-display').classList.remove('hide');
+  document.querySelector('.add-new-blog').classList.add('hide');
+}
+
 const newFormHandler = async (event) => {
     event.preventDefault();
   
@@ -42,10 +49,15 @@ const newFormHandler = async (event) => {
   };
   
   document
+  .querySelector('.add-new-blog')
+  .addEventListener('click', displayFormHandler);
+
+  document
     .querySelector('.new-blog-form')
     .addEventListener('submit', newFormHandler);
   
   document
     .querySelector('.blog-list')
     .addEventListener('click', delButtonHandler);
+  
   
