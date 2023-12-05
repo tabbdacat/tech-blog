@@ -15,7 +15,7 @@ const newFormHandler = async (event) => {
       });
 
       if (response.ok) {
-        document.location.replace(`/blogs/${blogId}`);
+        document.location.replace(`/blog/${blogId}`);
       } else {
         alert('Failed to create comment');
       }
