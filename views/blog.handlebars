@@ -11,32 +11,34 @@
 {{!-- Comments section --}}
 
 <form class="form new-comment-form my-3">
-  <input type="hidden" value="{{id}}" id="blog-id" name="blog-id"/>
+  <input type="hidden" value="{{id}}" id="blog-id" name="blog-id" />
   <div class="form-group">
-    <label for="comment-body" class="alpha fs-4 text fw-medium my-3">Add comment:</label>
-    <textarea class="form-control" id="comment-body" name="comment-body"></textarea>
+    <label for="comment-body" class="alpha fs-4 text fw-medium m-2">Leave a comment:</label>
+    <textarea class="form-control" style="width: 60%;" id="comment-body" name="comment-body"></textarea>
   </div>
   <div class="form-group">
     <button type="submit" class="btn btn-primary my-3">Submit</button>
   </div>
 </form>
 
-
-  <h3 class="">Comments:</h3>
-{{#if comments.length}}
+<div class="comment-list row">
+  <h4>Comments:</h4>
+  {{#if comments.length}}
   {{#each comments as |comment|}}
-  <div class="card m-2">
+  <div class="card m-2" style="width: 51%;">
     <div class="card-title col-md-8">
-      <p class="delta d-flex flex-row mb-0">{{comment.body}}</p>
-      <p class="d-inline ">Created by {{user.name}} 
+      <h5 class="d-flex flex-row mb-0">{{comment.body}}</h5>
+      <p class="d-inline ">Created by {{user.name}}
         on {{format_date comment.date_created}}</p>
-      <p class="d-inline"><a href="#" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"  data-id="{{comment.id}}">Delete</a></p>
+      <p class="d-inline"><a href="#"
+          class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          data-id="{{comment.id}}">Delete</a></p>
     </div>
-
   </div>
   {{/each}}
 </div>
-</div>
+{{!-- if no comments, display message --}}
+{{else}}
+<p>There are no comments yet to display</p>
 {{/if}}
-
 <script src="/js/comment.js"></script>
