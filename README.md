@@ -11,7 +11,7 @@ While developing this website, I learned about using MVC to build an application
 
 Once viewing the website, you are taken to the Home page. You can read posted blogs from others and see posted comments. If you log in, you gain additional access to the site so that you can post your own blog and comment on others' blogs. If you wish to delete your comment or blog post, you can do so as well.
 
-[Link to Deployed Application](https://drive.google.com/file/d/1xeiZXcs6CtzzEbV8cZy95ki6Trlk8mym/view)
+[Link to Deployed Application](https://tech-blog-t-pischke-400d3e7cf65d.herokuapp.com/login)
 
 ![image of deployed application](/assets/tech-blog-scrnsht.jpg)
 
